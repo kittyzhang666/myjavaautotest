@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/part1-testNG" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/part2-Mock" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/part3-httpClient" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/part4-SpringBoot" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/part5-MyBatis" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/part6-MyBatisMySQL" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/part7-TestNGMyBatis" charset="UTF-8" />
+  </component>
+</project>

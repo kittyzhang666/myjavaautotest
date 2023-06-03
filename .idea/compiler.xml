@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="part6-MyBatisMySQL" />
+        <module name="part1-testNG" />
+        <module name="part2-Mock" />
+        <module name="part5-MyBatis" />
+        <module name="part7-TestNGMyBatis" />
+        <module name="part4-SpringBoot" />
+        <module name="part3-httpClient" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="part6MyBatisMySQLCase" target="1.6" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="part1-testNG" options="" />
+      <module name="part2-Mock" options="" />
+      <module name="part3-httpClient" options="" />
+      <module name="part4-SpringBoot" options="" />
+      <module name="part5-MyBatis" options="" />
+      <module name="part7-TestNGMyBatis" options="-extdirs C:\Users\miko\IdeaProjects\MyJavaAutoTest\part7-TestNGMyBatis/lib" />
+    </option>
+  </component>
+</project>

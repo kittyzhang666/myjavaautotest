@@ -1,0 +1,14 @@
+<suite name="test">
+    <test name="login">
+        <classes>
+            <class name="com.testng.suite.SuiteConfig"/>
+            <class name="com.testng.suite.LoginTest"/>
+        </classes>
+    </test>
+    <test name="addUser">
+        <classes>
+            <class name="com.testng.suite.SuiteConfig"/>
+            <class name="com.testng.suite.addUserTest"/>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,22 @@
+<suite name="suitename">
+    <test name="runAll">
+        <classes>
+            <class name="com.testng.groups.GroupsOnClass1"/>
+            <class name="com.testng.groups.GroupsOnClass2"/>
+            <class name="com.testng.groups.GroupsOnClass3"/>
+        </classes>
+    </test>
+    <test name="RunUserOnly">
+        <groups>
+            <run>
+                <include name="user"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="com.testng.groups.GroupsOnClass1"/>
+            <class name="com.testng.groups.GroupsOnClass2"/>
+            <class name="com.testng.groups.GroupsOnClass3"/>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,4 @@
+com\myng\controller\UserManager.class
+com\myng\model\User.class
+com\myng\Application.class
+com\myng\config\SwaggerConfig.class

@@ -1,0 +1,159 @@
+[
+  {
+    "description":"这是个没有参数的get请求",
+    "request":{
+      "uri":"/getdemo",
+      "method":"get"
+    },
+    "response":{
+      "text":"这是个没有参数的get请求"
+    }
+
+  },
+  {
+    "description":"这是一个带参数get请求",
+    "request":{
+      "uri":"/getwithparam",
+      "method":"get",
+      "queries":{
+        "name":"mouse",
+        "color":"pink",
+        "age": "5"
+      }
+    },
+    "response":{
+      "text":"我是个粉色的鼠标，我今年5岁了"
+    }
+  },
+  {
+    "description":"这是一个post请求",
+    "request":{
+      "uri":"/postdemo",
+      "method":"post"
+    },
+    "response":{
+      "text":"这是我mock的post请求"
+    }
+  },
+  {
+    "description":"这是一个带参数的post请求",
+    "request":{
+      "uri":"/postwithparam",
+      "method":"post",
+      "forms":{
+        "name":"mouse",
+        "color":"red",
+        "age": "3"
+      }
+    },
+    "response":{
+      "text":"I am a  post request with parameter.I am a red mouse"
+    }
+  },
+  {
+    "description":"这是一个会返回cookies信息的get请求",
+    "request":{
+      "uri":"/getCookie",
+      "method":"get"
+    },
+    "response":{
+      "cookies":{
+        "login":"true"
+      },
+      "text":"恭喜你获得cookies信息成功"
+    }
+  },
+
+  {
+    "description":"这是一个带cookies信息的get请求",
+    "request":{
+      "uri":"/get/with/cookie",
+      "method":"get",
+      "cookies":{
+        "login":"true"
+      }
+    },
+    "response":{
+      "text":"this is a get request with cookies"
+    }
+  },
+  {
+    "description":"这是一个带cookies信息的post请求",
+    "request":{
+      "uri":"/post/with/cookie",
+      "method":"post",
+      "cookies":{
+        "login":"true"
+      },
+      "json":{
+        "name":"mouse",
+        "age":"3"
+      }
+    },
+    "response":{
+      "status":200,
+      "json":{
+        "mouse":"success",
+        "status":"1"
+      }
+    }
+  },
+  {
+    "description":"这是一个带header信息的post请求",
+    "request":{
+      "uri":"/post/with/headers",
+      "method":"post",
+      "headers":{
+        "content-type":"application/json"
+      },
+      "json":{
+        "name":"mouse",
+        "age":"3"
+      }
+    },
+    "response":{
+      "json":{
+        "mouse":"success",
+        "status":"1"
+      }
+    }
+
+  },
+  {
+    "description":"重定向到百度",
+    "request":{
+      "uri":"/redirect"
+    },
+    "redirectTo":"http://www.baidu.com"
+  },
+  {
+    "description":"重定向到一个自己的网页上",
+    "request":{
+      "uri":"/redirect/topath"
+    },
+    "redirectTo":"/redirect/new"
+  },
+  {
+    "description":"这是被重定向到的请求",
+    "request":{
+      "uri":"/redirect/new"
+    },
+    "response":{
+      "text":"重定向成功啦"
+    }
+  },
+
+  {
+    "description":"这是一个会返回cookie信息的get请求",
+    "request": {
+      "uri": "/getCookies",
+      "method": "get"
+    },
+    "response": {
+      "cookies": {
+        "login": "true"
+      },
+      "text": "恭喜你获得cookies信息成功"
+    }
+  }
+]

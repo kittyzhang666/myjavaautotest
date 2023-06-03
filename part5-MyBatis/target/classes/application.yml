@@ -1,0 +1,19 @@
+server:
+  port: 8080
+
+logging:
+  path: logs
+  file: Mylog.log
+
+spring:
+  application:
+    name: user
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.3.25:6022/yt_user_system
+    username: yt
+    password: yt2116
+mybatis:
+  type-aliases-package: com.mybatis.model
+  mapper-locations:
+    - mapper/*

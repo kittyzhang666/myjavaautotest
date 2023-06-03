@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
+  <reporter-output>
+  </reporter-output>
+  <suite name="用户管理系统测试套件" duration-ms="12395" started-at="2023-06-03T16:34:45Z" finished-at="2023-06-03T16:34:57Z">
+    <groups>
+      <group name="loginTrue">
+        <method signature="LoginTest.loginTrue()[pri:0, instance:com.my.cases.LoginTest@43a25848]" name="loginTrue" class="com.my.cases.LoginTest"/>
+      </group> <!-- loginTrue -->
+    </groups>
+    <test name="用户管理系统测试用例" duration-ms="12395" started-at="2023-06-03T16:34:45Z" finished-at="2023-06-03T16:34:57Z">
+      <class name="com.my.cases.UpdateUserInfoTest">
+        <test-method status="PASS" signature="updateUserInfo()[pri:0, instance:com.my.cases.UpdateUserInfoTest@3b6eb2ec]" name="updateUserInfo" duration-ms="3076" depends-on-groups="loginTrue" started-at="2023-06-04T00:34:50Z" description="更改用户信息" finished-at="2023-06-04T00:34:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateUserInfo -->
+        <test-method status="PASS" signature="deleteUser()[pri:0, instance:com.my.cases.UpdateUserInfoTest@3b6eb2ec]" name="deleteUser" duration-ms="2039" depends-on-groups="loginTrue" started-at="2023-06-04T00:34:53Z" description="删除用户" finished-at="2023-06-04T00:34:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteUser -->
+      </class> <!-- com.my.cases.UpdateUserInfoTest -->
+      <class name="com.my.cases.GetUserInfoListTest">
+        <test-method status="PASS" signature="getUserListInfo()[pri:0, instance:com.my.cases.GetUserInfoListTest@1e643faf]" name="getUserListInfo" duration-ms="2076" depends-on-groups="loginTrue" started-at="2023-06-04T00:34:55Z" description="获取性别为男的用户信息" finished-at="2023-06-04T00:34:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserListInfo -->
+      </class> <!-- com.my.cases.GetUserInfoListTest -->
+      <class name="com.my.cases.LoginTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.my.cases.LoginTest@43a25848]" name="beforeTest" is-config="true" duration-ms="34" started-at="2023-06-04T00:34:45Z" description="测试准备工作,获取HttpClient对象" finished-at="2023-06-04T00:34:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="loginTrue()[pri:0, instance:com.my.cases.LoginTest@43a25848]" name="loginTrue" duration-ms="972" started-at="2023-06-04T00:34:45Z" description="用户成功登陆接口" finished-at="2023-06-04T00:34:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTrue -->
+        <test-method status="PASS" signature="loginFalse()[pri:0, instance:com.my.cases.LoginTest@43a25848]" name="loginFalse" duration-ms="41" started-at="2023-06-04T00:34:46Z" description="用户登陆失败接口" finished-at="2023-06-04T00:34:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginFalse -->
+      </class> <!-- com.my.cases.LoginTest -->
+      <class name="com.my.cases.GetUserInfoTest">
+        <test-method status="PASS" signature="getUserInfo()[pri:0, instance:com.my.cases.GetUserInfoTest@6a5fc7f7]" name="getUserInfo" duration-ms="2040" depends-on-groups="loginTrue" started-at="2023-06-04T00:34:48Z" description="获取userId为1的用户信息" finished-at="2023-06-04T00:34:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserInfo -->
+      </class> <!-- com.my.cases.GetUserInfoTest -->
+      <class name="com.my.cases.AddUserTest">
+        <test-method status="PASS" signature="addUser()[pri:0, instance:com.my.cases.AddUserTest@3ac3fd8b]" name="addUser" duration-ms="2102" depends-on-groups="loginTrue" started-at="2023-06-04T00:34:46Z" description="添加用户接口接口" finished-at="2023-06-04T00:34:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addUser -->
+      </class> <!-- com.my.cases.AddUserTest -->
+    </test> <!-- 用户管理系统测试用例 -->
+  </suite> <!-- 用户管理系统测试套件 -->
+</testng-results>

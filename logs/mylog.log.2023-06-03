@@ -1,0 +1,75 @@
+2023-06-03 09:37:40.165 [http-nio-8894-exec-6] INFO  com.myng.controller.UserManager - 查看到的结果是1
+2023-06-03 09:37:40.241 [http-nio-8894-exec-5] INFO  com.myng.controller.UserManager - 查看到的结果是0
+2023-06-03 09:37:40.299 [http-nio-8894-exec-4] INFO  com.myng.controller.UserManager - cookies验证通过
+2023-06-03 09:37:40.313 [http-nio-8894-exec-4] INFO  com.myng.controller.UserManager - 添加用户的数量是:1
+2023-06-03 09:37:42.373 [http-nio-8894-exec-3] INFO  com.myng.controller.UserManager - cookies验证通过
+2023-06-03 09:37:42.377 [http-nio-8894-exec-3] INFO  com.myng.controller.UserManager - getUserInfo获取到的用户数量是1
+2023-06-03 09:37:44.439 [http-nio-8894-exec-7] INFO  com.myng.controller.UserManager - cookies验证通过
+2023-06-03 09:37:44.442 [http-nio-8894-exec-7] INFO  com.myng.controller.UserManager - 更新数据的条目数为:1
+2023-06-03 09:37:47.519 [http-nio-8894-exec-9] INFO  com.myng.controller.UserManager - cookies验证通过
+2023-06-03 09:37:47.521 [http-nio-8894-exec-9] INFO  com.myng.controller.UserManager - 更新数据的条目数为:1
+2023-06-03 09:37:49.579 [http-nio-8894-exec-10] INFO  com.myng.controller.UserManager - cookies验证通过
+2023-06-03 09:37:49.581 [http-nio-8894-exec-10] INFO  com.myng.controller.UserManager - getUserInfo获取到的用户数量是2
+2023-06-03 09:47:11.912 [main] INFO  com.myng.Application - Starting Application on LAPTOP-2NBJ6FCH with PID 43372 (C:\Users\miko\IdeaProjects\MyJavaAutoTest\part7-TestNGMyBatis\target\classes started by miko in C:\Users\miko\IdeaProjects\MyJavaAutoTest)
+2023-06-03 09:47:11.937 [main] INFO  com.myng.Application - No active profile set, falling back to default profiles: default
+2023-06-03 09:47:12.024 [main] INFO  o.s.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@49ec71f8: startup date [Sat Jun 03 09:47:12 CST 2023]; root of context hierarchy
+2023-06-03 09:47:13.388 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.myng]' package. Please check your configuration.
+2023-06-03 09:47:13.927 [main] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b3f87cd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-06-03 09:47:14.270 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8894 (http)
+2023-06-03 09:47:14.278 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2023-06-03 09:47:14.279 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+2023-06-03 09:47:14.384 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-06-03 09:47:14.385 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2360 ms
+2023-06-03 09:47:14.554 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2023-06-03 09:47:14.558 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2023-06-03 09:47:14.559 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2023-06-03 09:47:14.559 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2023-06-03 09:47:14.559 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2023-06-03 09:47:15.652 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/getUserInfo],methods=[POST]}" onto public java.util.List<com.myng.model.User> com.myng.controller.UserManager.getUserInfo(javax.servlet.http.HttpServletRequest,com.myng.model.User)
+2023-06-03 09:47:15.653 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/addUser],methods=[POST]}" onto public boolean com.myng.controller.UserManager.addUser(javax.servlet.http.HttpServletRequest,com.myng.model.User)
+2023-06-03 09:47:15.653 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/login],methods=[POST]}" onto public java.lang.Boolean com.myng.controller.UserManager.login(javax.servlet.http.HttpServletResponse,com.myng.model.User)
+2023-06-03 09:47:15.654 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/updateUserInfo],methods=[POST]}" onto public int com.myng.controller.UserManager.updateUser(javax.servlet.http.HttpServletRequest,com.myng.model.User)
+2023-06-03 09:47:15.655 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2023-06-03 09:47:15.658 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2023-06-03 09:47:15.659 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2023-06-03 09:47:15.659 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2023-06-03 09:47:15.662 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2023-06-03 09:47:15.663 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2023-06-03 09:47:15.840 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@49ec71f8: startup date [Sat Jun 03 09:47:12 CST 2023]; root of context hierarchy
+2023-06-03 09:47:15.900 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2023-06-03 09:47:15.900 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2023-06-03 09:47:15.942 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2023-06-03 09:47:16.173 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2023-06-03 09:47:16.188 [main] INFO  org.springframework.context.support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2023-06-03 09:47:16.189 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2023-06-03 09:47:16.209 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2023-06-03 09:47:16.221 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2023-06-03 09:47:16.495 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8894 (http)
+2023-06-03 09:47:16.499 [main] INFO  com.myng.Application - Started Application in 5.019 seconds (JVM running for 6.975)
+2023-06-03 09:47:31.419 [http-nio-8894-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2023-06-03 09:47:31.419 [http-nio-8894-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2023-06-03 09:47:31.448 [http-nio-8894-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 29 ms
+2023-06-03 09:47:32.369 [http-nio-8894-exec-1] INFO  com.myng.controller.UserManager - 查看到的结果是1
+2023-06-03 09:47:32.441 [http-nio-8894-exec-3] INFO  com.myng.controller.UserManager - 查看到的结果是0
+2023-06-03 09:47:32.497 [http-nio-8894-exec-4] INFO  com.myng.controller.UserManager - cookies验证通过
+2023-06-03 09:47:32.542 [http-nio-8894-exec-4] INFO  com.myng.controller.UserManager - 添加用户的数量是:1
+2023-06-03 09:47:34.619 [http-nio-8894-exec-5] INFO  com.myng.controller.UserManager - cookies验证通过
+2023-06-03 09:47:34.646 [http-nio-8894-exec-5] INFO  com.myng.controller.UserManager - getUserInfo获取到的用户数量是1
+2023-06-03 09:47:36.717 [http-nio-8894-exec-2] INFO  com.myng.controller.UserManager - cookies验证通过
+2023-06-03 09:47:36.720 [http-nio-8894-exec-2] INFO  com.myng.controller.UserManager - 更新数据的条目数为:1
+2023-06-03 09:47:39.810 [http-nio-8894-exec-7] INFO  com.myng.controller.UserManager - cookies验证通过
+2023-06-03 09:47:39.813 [http-nio-8894-exec-7] INFO  com.myng.controller.UserManager - 更新数据的条目数为:1
+2023-06-03 09:47:41.867 [http-nio-8894-exec-6] INFO  com.myng.controller.UserManager - cookies验证通过
+2023-06-03 09:47:41.870 [http-nio-8894-exec-6] INFO  com.myng.controller.UserManager - getUserInfo获取到的用户数量是2
+2023-06-03 09:50:51.276 [http-nio-8894-exec-10] INFO  com.myng.controller.UserManager - 查看到的结果是1
+2023-06-03 09:50:51.327 [http-nio-8894-exec-9] INFO  com.myng.controller.UserManager - 查看到的结果是0
+2023-06-03 09:50:51.373 [http-nio-8894-exec-1] INFO  com.myng.controller.UserManager - cookies验证通过
+2023-06-03 09:50:51.434 [http-nio-8894-exec-1] INFO  com.myng.controller.UserManager - 添加用户的数量是:1
+2023-06-03 09:50:53.496 [http-nio-8894-exec-3] INFO  com.myng.controller.UserManager - cookies验证通过
+2023-06-03 09:50:53.498 [http-nio-8894-exec-3] INFO  com.myng.controller.UserManager - getUserInfo获取到的用户数量是1
+2023-06-03 09:50:55.565 [http-nio-8894-exec-4] INFO  com.myng.controller.UserManager - cookies验证通过
+2023-06-03 09:50:55.569 [http-nio-8894-exec-4] INFO  com.myng.controller.UserManager - 更新数据的条目数为:1
+2023-06-03 09:50:58.657 [http-nio-8894-exec-5] INFO  com.myng.controller.UserManager - cookies验证通过
+2023-06-03 09:50:58.659 [http-nio-8894-exec-5] INFO  com.myng.controller.UserManager - 更新数据的条目数为:1
+2023-06-03 09:51:00.719 [http-nio-8894-exec-2] INFO  com.myng.controller.UserManager - cookies验证通过
+2023-06-03 09:51:00.723 [http-nio-8894-exec-2] INFO  com.myng.controller.UserManager - getUserInfo获取到的用户数量是2
